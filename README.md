@@ -1,6 +1,14 @@
-# AI导航
+# AI 导航（ai-navigator）
 
 **Slogan：** 找到最适合你的 AI 工具
+
+> **仓库改名历史**
+>
+> | 时间 | 本地目录 | GitHub 仓库 | 说明 |
+> |------|----------|-------------|------|
+> | — | `aimake-x` | `chicogong/aimake-x` | 初始命名，内部代号 |
+> | 2026-06-26 | `navigator` | — | 过渡名（已废弃） |
+> | 2026-06-26 | **`ai-navigator`** | **`chicogong/ai-navigator`** ✅ | 现用名；归属 chicogong 个人账号，不进 aimake-labs org |
 
 ## 项目简介
 
@@ -38,7 +46,7 @@ curl https://x.aimake.cc/api/cases
 ## 项目结构
 
 ```
-aimake-x/
+ai-navigator/
 ├── frontend/                # Vue 3 前端项目
 │   ├── src/
 │   │   ├── App.vue          # 主应用组件
