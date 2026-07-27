@@ -76,6 +76,26 @@ export const PRODUCTS = {
     { name: '通义听悟', url: 'https://tingwu.aliyun.com', desc: '会议录音转写、AI 总结' }
   ],
 
+  // ─── 2026 新增分类 ─────────────────────────────────────────────
+
+  'AI Agent': [
+    { name: 'Dify', url: 'https://dify.ai', desc: '开源低代码 AI 应用平台，可视化搭建签证材料自动化流程，支持 RAG 知识库' },
+    { name: 'Coze', url: 'https://coze.com', desc: '字节跳动 AI Bot 搭建平台，零代码构建出海工作流助手，多平台发布' },
+    { name: 'CrewAI', url: 'https://crewai.com', desc: '多智能体协作框架，编排角色化 Agent 完成多步骤出海任务' },
+    { name: 'n8n', url: 'https://n8n.io', desc: '开源工作流自动化引擎，AI 节点可实现签证进度提醒、邮件自动化等' },
+    { name: 'LangChain', url: 'https://langchain.com', desc: 'LLM 应用开发框架，构建定制化出海工具链（文档分析、翻译管道等）' }
+  ],
+
+  '开源工具': [
+    { name: 'Ollama', url: 'https://ollama.com', desc: '一键本地运行 Llama/Qwen/DeepSeek 等开源模型，完全离线可用' },
+    { name: 'Open WebUI', url: 'https://openwebui.com', desc: '自托管类 ChatGPT 界面，数据不出本地，适合隐私敏感的签证材料处理' },
+    { name: 'LM Studio', url: 'https://lmstudio.ai', desc: '桌面端开源模型管理与推理工具，GUI 友好，支持 GPU 加速推理' },
+    { name: 'DeepSeek R1', url: 'https://deepseek.com', desc: '国产推理模型，代码能力极强，擅长技术文档分析与逻辑推理' },
+    { name: 'Qwen 3', url: 'https://tongyi.aliyun.com', desc: '阿里最新开源模型，多语言能力出色，中英翻译质量业界领先' },
+    { name: 'Llama 4', url: 'https://llama.meta.com', desc: 'Meta 最新开源多模态模型，推理能力全面升级，适合复杂技术任务' },
+    { name: 'Mistral', url: 'https://mistral.ai', desc: '欧洲领先开源模型，多语言跨文化支持优秀，适合海外协作场景' }
+  ],
+
   // ─── 通用 AI 工具区 ───────────────────────────────────────────────
 
   '文档': [

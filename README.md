@@ -43,6 +43,8 @@
 | ✍️ **技术写作** | Claude、ChatGPT、Grammarly、DeepL |
 | 🌍 **远程协作** | Notion AI、飞书 AI、Loom |
 | 💻 **写代码** | Cursor、GitHub Copilot、通义灵码 |
+| 🤖 **AI Agent** | Dify、Coze、CrewAI、n8n、LangChain |
+| 🔓 **开源工具** | Ollama、Open WebUI、LM Studio、DeepSeek R1、Qwen 3、Llama 4、Mistral |
 
 ---
 
