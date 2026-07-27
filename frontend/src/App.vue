@@ -17,11 +17,11 @@
   <section class="hero">
     <div class="container">
       <div class="hero-badge">
-        <span>已收录 50+ 款 AI 工具</span>
+        <span>🚀 程序员专属 · 出海 AI 工具导航</span>
       </div>
-      <h1>任何事情先看看<br><span>AI 能不能做</span></h1>
+      <h1>出海程序员的<br><span>AI 工具精选导航</span></h1>
       <p class="hero-subtitle">
-        告诉我你想做什么，我帮你找到最适合的 AI 工具
+        专为技术移民、雅思备考、海外求职、签证申请打造的 AI 工具基站
       </p>
 
       <div class="search-container">
@@ -42,12 +42,12 @@
         </div>
 
         <div class="quick-tags">
-          <span class="quick-tag" @click="quickSearch('视频剪辑加字幕')">视频剪辑</span>
-          <span class="quick-tag" @click="quickSearch('会议录音转文字')">会议记录</span>
-          <span class="quick-tag" @click="quickSearch('分析合同文档')">合同审查</span>
+          <span class="quick-tag" @click="quickSearch('备考雅思')">雅思备考</span>
+          <span class="quick-tag" @click="quickSearch('准备签证材料')">签证办理</span>
+          <span class="quick-tag" @click="quickSearch('海外求职简历')">海外求职</span>
+          <span class="quick-tag" @click="quickSearch('英文技术写作')">技术写作</span>
+          <span class="quick-tag" @click="quickSearch('远程协作')">远程协作</span>
           <span class="quick-tag" @click="quickSearch('写代码')">代码生成</span>
-          <span class="quick-tag" @click="quickSearch('处理Excel表格')">Excel处理</span>
-          <span class="quick-tag" @click="quickSearch('AI绘画生成图片')">AI绘画</span>
         </div>
 
         <HistoryTags
@@ -61,6 +61,121 @@
                :data-sitekey="turnstileSiteKey"
                data-callback="onTurnstileSuccess"
                data-theme="dark"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ 亮点 1：明星生态工具推荐区 -->
+  <section class="featured-ecosystem-section">
+    <div class="container">
+      <div class="section-header" style="text-align: left; margin-bottom: 20px;">
+        <h2>⭐ 明星生态工具 (Featured Ecosystem)</h2>
+        <p>为出海程序员量身定制的无缝工作流工具</p>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Card 1: Code-IELTS -->
+        <div class="featured-card">
+          <div class="card-top">
+            <span class="card-badge">⭐ 明星项目 · 极客备考</span>
+            <span class="card-tag">雅思 / 英语 / 终端 IDE</span>
+          </div>
+          <h3 class="card-title">
+            <span>Code-IELTS</span>
+          </h3>
+          <p class="card-desc">
+            用工程师的方式重构你的英语系统！打字练习 + FSRS 记忆算法 + 🔴 Error / 🟠 Warning / 🔵 Info Linter 级批改 + GitHub 绿点打卡。
+          </p>
+          <a href="https://code-ielts.vercel.app" target="_blank" class="card-btn">
+            🚀 体验 Code-IELTS (Vercel 在线) →
+          </a>
+        </div>
+
+        <!-- Card 2: AI.Done / visa-skills -->
+        <div class="featured-card">
+          <div class="card-top">
+            <span class="card-badge">🛡️ 隐私安全 · 10国 Skill</span>
+            <span class="card-tag">签证 / 文书 / Local-First</span>
+          </div>
+          <h3 class="card-title">
+            <span>AI.Done & visa-skills</span>
+          </h3>
+          <p class="card-desc">
+            浏览器本地 AES-GCM 256 位加密，填一次数据自动生成行程单、在职证明与邀请函。配套 10 国开源 Agent Skill，一键安装至 Claude/Cursor。
+          </p>
+          <a href="https://aidone.cc" target="_blank" class="card-btn">
+            🛡️ 访问 aidone.cc (本地加密生成) →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧮 亮点 2：程序员出海移居 & 签证匹配算盘 -->
+  <section class="calculator-section">
+    <div class="container">
+      <div class="calculator-card">
+        <div class="section-header" style="text-align: left; margin-bottom: 10px;">
+          <h2>🧮 程序员出海移居 & 签证匹配算盘</h2>
+          <p>选择你的目标方向与条件，实时计算通过概率与必备 AI 工具链</p>
+        </div>
+
+        <div class="calculator-controls">
+          <div class="control-group">
+            <label>🎯 意向目的地与签证类型：</label>
+            <select v-model="selectedCountry" class="calc-select">
+              <option value="japan">🇯🇵 日本 · 高度人才 / IT 专职</option>
+              <option value="spain">🇪🇸 西班牙 · Digital Nomad 数字游民</option>
+              <option value="thailand">🇹🇭 泰国 · DTV 终极数字游民签证</option>
+              <option value="singapore">🇸🇬 新加坡 · Tech Pass / EP 高管</option>
+              <option value="canada">🇨🇦 加拿大 · Express Entry Tech</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label>💻 研发工作经验：</label>
+            <select v-model="selectedExp" class="calc-select">
+              <option value="junior">1 - 3 年经验</option>
+              <option value="mid">3 - 5 年经验</option>
+              <option value="senior">5 年以上核心架构师</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label>🗣️ 英语 / 雅思水平：</label>
+            <select v-model="selectedIelts" class="calc-select">
+              <option value="6.0">雅思 6.0 分 (基础交流)</option>
+              <option value="7.0">雅思 7.0 分 (良好分级)</option>
+              <option value="7.5">雅思 7.5 分+ (流利专家)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calculator-result-box">
+          <div class="score-circle">
+            <div class="score-number">{{ currentCalc.totalScore }}%</div>
+            <div class="score-label">匹配指数 (极高)</div>
+          </div>
+          <div class="result-details">
+            <h4>{{ currentCalc.name }}</h4>
+            <div class="result-reqs">
+              <span v-for="r in currentCalc.reqs" :key="r" class="req-pill">✓ {{ r }}</span>
+              <span class="req-pill" style="color: var(--accent);">⏱️ {{ currentCalc.period }}</span>
+            </div>
+            <div class="recommended-tools-bar">
+              <span style="font-size: 13px; color: var(--text-muted);">💡 推荐配备工具：</span>
+              <a 
+                v-for="t in currentCalc.tools" 
+                :key="t.name" 
+                :href="t.url" 
+                target="_blank" 
+                class="tool-chip"
+              >
+                {{ t.name }} ↗
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -219,6 +334,74 @@ const isFavoriteModalOpen = ref(false)
 const mermaidSvg = ref('')
 /** 结果区域 DOM 引用（用于滚动定位）*/
 const resultsSectionRef = ref(null)
+
+// --- 🧮 移居算盘 State & Data ---
+const selectedCountry = ref('japan')
+const selectedExp = ref('mid')
+const selectedIelts = ref('7.0')
+
+const countryData = {
+  japan: {
+    name: '🇯🇵 日本 · 高度人才 / IT 专职',
+    baseScore: 82,
+    reqs: ['学士及以上学历', 'IT 相关工作 3 年+', '日语 N2 或 英文流利'],
+    period: '办理周期 1-3 个月',
+    tools: [
+      { name: 'Code-IELTS 备考', url: 'https://github.com/chicogong/code-ielts' },
+      { name: 'AI.Done 在职/履历生成', url: 'https://aidone.cc' },
+      { name: 'japan-visa-skill', url: 'https://github.com/chicogong/visa-skills' }
+    ]
+  },
+  spain: {
+    name: '🇪🇸 西班牙 · Digital Nomad 数字游民签证',
+    baseScore: 88,
+    reqs: ['远程收入 ≥ €2600/月', '可开具远程工作证明', '无犯罪记录'],
+    period: '办理周期 1-2 个月',
+    tools: [
+      { name: 'AI.Done 本地加密证明信', url: 'https://aidone.cc' },
+      { name: 'schengen-visa-skill', url: 'https://github.com/chicogong/visa-skills' }
+    ]
+  },
+  thailand: {
+    name: '🇹🇭 泰国 · DTV 终极数字游民签证',
+    baseScore: 95,
+    reqs: ['存款证明 ≥ 50 万泰铢', '远程工作/自由职业身份', '5 年多次往返'],
+    period: '办理周期 2-4 周',
+    tools: [
+      { name: 'AI.Done 行程与存款模版', url: 'https://aidone.cc' },
+      { name: 'thailand-visa-skill', url: 'https://github.com/chicogong/visa-skills' }
+    ]
+  },
+  singapore: {
+    name: '🇸🇬 新加坡 · Tech Pass / EP',
+    baseScore: 78,
+    reqs: ['固定月薪 ≥ S$22,500', 'IT 技术专家 / 架构师', '英文无障碍交流'],
+    period: '办理周期 1-2 个月',
+    tools: [
+      { name: 'Code-IELTS 英文面试 Linter', url: 'https://github.com/chicogong/code-ielts' },
+      { name: 'singapore-visa-skill', url: 'https://github.com/chicogong/visa-skills' }
+    ]
+  },
+  canada: {
+    name: '🇨🇦 加拿大 · Express Entry / Tech Stream',
+    baseScore: 75,
+    reqs: ['雅思 CLB 8+ (7.5/8.0/7.5/7.5)', '计算机相关学历', '综合 CRS 打分'],
+    period: '办理周期 6-12 个月',
+    tools: [
+      { name: 'Code-IELTS 雅思高分提分', url: 'https://github.com/chicogong/code-ielts' },
+      { name: 'AI.Done 证明信与简历', url: 'https://aidone.cc' }
+    ]
+  }
+}
+
+const currentCalc = computed(() => {
+  const c = countryData[selectedCountry.value] || countryData.japan
+  let scoreBonus = 0
+  if (selectedExp.value === 'senior') scoreBonus += 6
+  if (selectedIelts.value === '7.5') scoreBonus += 6
+  const totalScore = Math.min(99, c.baseScore + scoreBonus)
+  return { ...c, totalScore }
+})
 
 // --- Constants & Config ---
 /**
